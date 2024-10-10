@@ -8,6 +8,7 @@ import STATES from "@/utils/states";
 import TABS from "@/utils/tabs";
 import { IoCodeSlash } from "react-icons/io5";
 import { MdOutlineDraw } from "react-icons/md";
+import { MdVideoCall } from 'react-icons/md';
 import { TbMathIntegralX } from 'react-icons/tb'; // Import the new icon
 
 function Sidebar() {
@@ -42,6 +43,13 @@ function Sidebar() {
                     tabName={TABS.AI_CALCULATOR}
                     icon={<TbMathIntegralX size={30} />} // Use the new icon here
                     url="https://ai-powered-calculator-2.onrender.com/"
+                />
+
+                {/* API Video Chat/Call */}    
+                <TabButton
+                    tabName="Video Call"
+                    icon={<MdVideoCall size={30} />} // Use an appropriate icon for video call
+                    url="https://videolink2me.com/"
                 />
 
                 <button className="self-end" onClick={changeState}>

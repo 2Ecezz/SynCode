@@ -235,10 +235,6 @@ function FormComponent() {
                 <Button type="button" onClick={handleGoogleSignIn}>
                     Sign in with Google
                 </Button>
-                <LinkButton href="https://videolink2me.com/" target="_blank" rel="noopener noreferrer">
-                    Video Call
-                    <span className="label">New</span>
-                </LinkButton>
             </div>
         </ThemeProvider>
     );
